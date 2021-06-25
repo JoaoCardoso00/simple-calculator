@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator!</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../img/Graphicloads-100-Flat-2-Calculator.ico" type="image/x-icon">
+</head>
+<body>
+    <main class="main">
+        <form class="calculator" name="calculator">
+            <input type="text" readonly class="value" name="txt">
+            <span class="num clear" onclick="calculator.txt.value = ''">C</span>
+            <span class="num" onclick="document.calculator.txt.value += '/'">/</span>
+            <span class="num" onclick="document.calculator.txt.value += '*'">*</span>
+            <span class="num" onclick="document.calculator.txt.value += '7'">7</span>
+            <span class="num" onclick="document.calculator.txt.value += '8'">8</span>
+            <span class="num" onclick="document.calculator.txt.value += '9'">9</span>
+            <span class="num" onclick="document.calculator.txt.value += '-'">-</span>
+            <span class="num" onclick="document.calculator.txt.value += '4'">4</span>
+            <span class="num" onclick="document.calculator.txt.value += '5'">5</span>
+            <span class="num" onclick="document.calculator.txt.value += '6'">6</span>
+            <span class="num add" onclick="document.calculator.txt.value += '+'">+</span>
+            <span class="num" onclick="document.calculator.txt.value += '1'">1</span>
+            <span class="num" onclick="document.calculator.txt.value += '2'">2</span>
+            <span class="num" onclick="document.calculator.txt.value += '3'">3</span>
+            <span class="num" onclick="document.calculator.txt.value += '0'">0</span>
+            <span class="num" onclick="document.calculator.txt.value += '00'">00</span>
+            <span class="num" onclick="document.calculator.txt.value += '.'">.</span>
+            <span class="num" onclick="document.calculator.txt.value = eval(calculator.txt.value)">=</span>
+        </form>
+    </main>
+    <script type="text/javascript" src="../js/vanilla-tilt.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelector(".main"), {
+            max: 25,
+            speed: 400,
+            glare: true,
+            "max-glare": 0.1,
+        });
+    </script>
+</body>
+</html>

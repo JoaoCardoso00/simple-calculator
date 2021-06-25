@@ -1,0 +1,14 @@
+{
+  "name": "simple_calculator",
+  "version": "1.0.0",
+  "description": "simple calculator using html,css and vanilla-tilt.js",
+  "main": "vanilla-tilt.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "cardoso",
+  "license": "ISC",
+  "dependencies": {
+    "vanilla-tilt": "^1.7.0"
+  }
+}
